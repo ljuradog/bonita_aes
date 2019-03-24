@@ -21,6 +21,7 @@
         </div>
 
         <script src="./Assets/jquery-3.3.1.min.js"></script>
+        <script src="./Components/common.js"></script>
         <script src="./Components/login.js"></script>
     </body>
 </html>
