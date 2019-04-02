@@ -1,8 +1,5 @@
 <?php
     session_start();
-    if (isset($_SESSION["apiToken"])) {
-        
-    }
 ?>
 
 <!DOCTYPE html>
@@ -18,16 +15,17 @@
             <img class="my-0 mr-md-auto" src="./Assets/Decameron-logo.png" alt="" width="auto" height="50">
             <a class="btn btn-outline-primary" href="#">Cerrar Sesion</a>
         </div>
-
         <div class="container">
-            <div class="card-deck col col-lg-4 text-center">
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 id="usuarioLogueado" class="my-0 font-weight-normal">Leonardo</h4>
-                    </div>
-                    <div class="card-body">
-                        Activo
-                        <button id="crearInstancia" type="button" class="btn btn-lg btn-block btn-outline-primary">Asignar Llamada</button>
+            <div class="row">
+                <div class="col col-lg-3 text-center">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h4 id="usuarioLogueado" class="my-0 font-weight-normal"></h4>
+                        </div>
+                        <div class="card-body">
+                            Activo
+                            <button id="crearInstancia" type="button" class="btn btn-lg btn-block btn-outline-primary">Asignar Llamada</button>
+                        </div>
                     </div>
                 </div>
             </div>

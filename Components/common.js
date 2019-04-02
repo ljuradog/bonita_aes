@@ -18,7 +18,7 @@ function loginSuccess(result, status, xhr) {
 		userName: result.user_name,
     };
 
-    $('#usuarioLogueado').html(sesionBonita.userId + ' - ' + sesionBonita.userName);
+    $('#usuarioLogueado').html('Agente: <strong>' + sesionBonita.userName.toUpperCase() + '</strong>');
 
     // Se debe evaluar. Creo que no es necesario este manejo de sesion por PHP
 	Ajax('POST', '', appSetSession, JSON.stringify(sesionBonita), function (response) {
@@ -26,7 +26,7 @@ function loginSuccess(result, status, xhr) {
     });
     
     if (rutaLoginStatus !== '') {
-        window.location.href = 'http://127.0.0.1/vueJs/'+rutaLoginStatus;
+        window.location.href = rutaLoginStatus;
     }
 }
 
