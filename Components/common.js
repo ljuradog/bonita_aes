@@ -32,7 +32,7 @@ function loginSuccess(result, status, xhr) {
 
 function loginError(err) {
     alert('No hay sesion iniciada');
-    window.location.href = "http://127.0.0.1/vueJs/";
+    window.location.href = "";
 }
 
 function Ajax(type, url, endpoint, params, callbackFunction, errorFunction = ajaxError) {

@@ -1,7 +1,6 @@
 //========= CONSTANTES DE BONITA
 //
-var procesoId = 6160510033048213437;
-var bonitaInstanciaProceso = '/bonita/API/bpm/process/'+ procesoId +'/instantiation';
+var procesoId = '6160510033048213437';
 const appSetActiveProcess = 'activeProcess.php'
 var reservaInput = 1;
 
@@ -10,6 +9,7 @@ $(document).ready(function () {
 });
 
 $('#crearInstancia').click(function () {
+    var bonitaInstanciaProceso = '/bonita/API/bpm/process/'+ procesoId +'/instantiation';
     AjaxBonita('POST', urlBonita, bonitaInstanciaProceso, {
         iniciaReservaInput: {
             idProceso:1,
