@@ -1,6 +1,7 @@
 //========= CONSTANTES DE BONITA
-// 
-const bonitaInstanciaProceso = '/bonita/API/bpm/process/7660356212200998210/instantiation';
+//
+var procesoId = 6160510033048213437;
+var bonitaInstanciaProceso = '/bonita/API/bpm/process/'+ procesoId +'/instantiation';
 const appSetActiveProcess = 'activeProcess.php'
 var reservaInput = 1;
 
