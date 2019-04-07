@@ -1,8 +1,8 @@
 //========= CONSTANTES DE BONITA
 //
-var procesoId = '8771768504080741868';
+var procesoId = '8108716299688384786';
 const appSetActiveProcess = 'activeProcess.php'
-var reservaInput = 1;
+var reservaInput = 2;
 
 $(document).ready(function () {
     loginStatus();
